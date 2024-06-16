@@ -1,11 +1,5 @@
-import { mergeApplicationConfig, ApplicationConfig } from '@angular/core';
-import { provideServerRendering } from '@angular/platform-server';
-import { appConfig } from './app.config';
+// Remova ou ajuste isso conforme necessário, se não houver `appConfig` exportado.
+import { bootstrapApplication } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
 
-const serverConfig: ApplicationConfig = {
-  providers: [
-    provideServerRendering()
-  ]
-};
-
-export const config = mergeApplicationConfig(appConfig, serverConfig);
+bootstrapApplication(AppComponent);

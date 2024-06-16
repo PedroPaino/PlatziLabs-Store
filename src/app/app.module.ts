@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule
+    // Outros módulos
   ],
   providers: [],
-  bootstrap: [] // Não use bootstrap aqui se estiver usando standalone
+  bootstrap: [] // Remova o AppComponent daqui se ele for standalone
 })
 export class AppModule { }
